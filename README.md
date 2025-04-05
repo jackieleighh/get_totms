@@ -1,3 +1,3 @@
-# Get Totem
+# TOTMS
 
-Get Totem, your new music festival app.
+TOTMS, your new music festival app.

@@ -5,13 +5,13 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDZqtE2YC-wuquNorOzIW5gNtD1ESuQ8is",
-  authDomain: "get-totem.firebaseapp.com",
-  projectId: "get-totem",
-  storageBucket: "get-totem.firebasestorage.app",
-  messagingSenderId: "258539474151",
-  appId: "1:258539474151:web:27d98aa4e1c1c032f72642",
-  measurementId: "G-01KG6BFET5"
+  apiKey: "AIzaSyCejKt51ohp5WEk-9Q2Z7GEhhD4JJ5diHU",
+  authDomain: "totms-app.firebaseapp.com",
+  projectId: "totms-app",
+  storageBucket: "totms-app.firebasestorage.app",
+  messagingSenderId: "939986964225",
+  appId: "1:939986964225:web:a4a8e53ecc61256170d500",
+  measurementId: "G-PVE1DECGB7"
 };
 
 function App() {
