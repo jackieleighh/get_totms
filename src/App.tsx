@@ -17,7 +17,7 @@ const firebaseConfig = {
 function App() {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+  getAnalytics(app);
 
   return (
     <div className="App">
@@ -28,7 +28,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="mailto:jackieleighh@gmail.com"
+          href="mailto:get.totms@gmail.com"
         >
           Contact Us
         </a>
