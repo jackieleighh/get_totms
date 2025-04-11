@@ -3,6 +3,7 @@ import logo from './logo.png';
 import './App.css';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import FancyButton from './FancyButton';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCejKt51ohp5WEk-9Q2Z7GEhhD4JJ5diHU",
@@ -19,6 +20,10 @@ function App() {
   const app = initializeApp(firebaseConfig);
   getAnalytics(app);
 
+  function handleClick () {
+    window.open("mailto:get.totms@gmail.com", '_blank');
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -26,12 +31,8 @@ function App() {
         <p>
           Your music festival app.
         </p>
-        <a
-          className="App-link"
-          href="mailto:get.totms@gmail.com"
-        >
-          Contact Us
-        </a>
+        <div style={{height:"10px"}} />
+        <FancyButton onClick={handleClick} color="#ff389c" width={170} height={60} fontSize={20} borderWidth={10} buttonText='CONTACT US' />
       </header>
     </div>
   );
