@@ -28,11 +28,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Your music festival app.
-        </p>
-        <div style={{height:"10px"}} />
-        <FancyButton onClick={handleClick} color="#ff389c" width={170} height={60} fontSize={20} borderWidth={10} buttonText='CONTACT US' />
+        <p>your music festival app.</p>
+        <div style={{height:"20px"}} />
+        <FancyButton onClick={handleClick} color="#ff379b" width={140} height={54} fontSize={20} borderWidth={9} buttonText='contact us' />
       </header>
     </div>
   );
