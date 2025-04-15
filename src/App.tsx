@@ -30,7 +30,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>your music festival app.</p>
         <div style={{height:"20px"}} />
-        <FancyButton onClick={handleClick} color="#ff379b" width={140} height={54} fontSize={20} borderWidth={9} buttonText='contact us' />
+        <FancyButton onClick={handleClick} color="#ff1d8e" width={140} height={54} fontSize={20} borderWidth={9} buttonText='contact us' />
       </header>
     </div>
   );
