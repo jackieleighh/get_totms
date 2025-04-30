@@ -8,18 +8,20 @@ interface Props {
 	fontSize: number;
 	borderWidth: number;
     buttonText: string;
+	id: string;
+	style?: any;
 }
 
 class FancyButton extends Component<Props> {
 	render() {
 		// Mask id and styling
         // need unique id's for multiple buttons
-		const maskId = 'mask_1';
-		const maskStyle = '#fancy-masked-element_' + maskId + ' { mask: url(#' + maskId + '); -webkit-mask: url(#' + maskId + ')}';
+		const maskStyle = '#fancy-masked-element_' + this.props.id + ' { mask: url(#' + this.props.id + '); -webkit-mask: url(#' + this.props.id + ')}';
 
 		const buttonStyle = {
 			width: this.props.width,
-			height: this.props.height
+			height: this.props.height,
+			...this.props.style
 		};
 
 		const fancyFrontStyle = {
@@ -45,7 +47,7 @@ class FancyButton extends Component<Props> {
 							width={this.props.width}
 							viewBox={viewBox}>
 							<defs>
-								<mask id={maskId}>
+								<mask id={this.props.id}>
 									<rect width="100%" height="100%" fill="#FFFFFF"/>
 									<text className="mask-text button-text" fill="#000000" transform={textTransform} fontSize={this.props.fontSize} width="100%" textAnchor="middle" letterSpacing="1">{this.props.buttonText}</text>
 								</mask>
@@ -53,7 +55,7 @@ class FancyButton extends Component<Props> {
 							<style>
 								{maskStyle}
 							</style>
-							<rect id={'fancy-masked-element_' + maskId} fill={this.props.color} width="100%" height="100%"/>
+							<rect id={'fancy-masked-element_' + this.props.id} fill={this.props.color} width="100%" height="100%"/>
 						</svg>
 					</div>
 					<div className="fancy-back" style={fancyBackStyle}>
