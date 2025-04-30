@@ -49,12 +49,10 @@ function App() {
         </div>
         <div id="about" className='section'>
           <div className="section-header">who we are</div>
-          <p>We built TOTMS for festivals to reach their audiences.</p>
-          <p>Need to make last minute schedule updates?  No problem.</p>
-          <p>Accouncements about weather conditions?  You got it.</p>
-          <p>Maps, artist info, FAQs, you name it.</p>
+          <p>We built TOTMS to keep festivals simple and stress-free.</p>
+          <p>Last minute schedule updates, weather alerts, maps, artist info — it's all in your pocket.</p>
           <p>We tried to think of everything, and are working on new features every day.</p>
-          <p>Built by festival-goers, for festival-goers.</p>
+          <p>Built by fans, for fans.</p>
         </div>
         <div id="app" className='section'>
           <div className="section-header">the app</div>
